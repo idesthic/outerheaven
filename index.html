@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+		<meta name="keywords" content="outer heaven, system administration, IT services">
+		<meta name="description" content="The official webpage of Outer Heaven, an IT company">
+		<meta name="author" content="Iva">
+		<meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
+    <title>outer heaven</title>
+    <link rel="shortcut icon" href="images/icon_outerheaven.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script type="text/javascript" src="js/main.js"></script>
+  <body>
+    <nav id="home" class="navbar">
+			<div id="navbar__nav" class="nav-bar">
+  				<ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+  					<li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
+  					<li class="nav-item" onclick="showContactForm();"><a class="nav-link" href="#contact">Contact</a></li>
+  				</ul>
+			</div>
+      <i id="bar" class="fa-solid fa-minus" onmouseover="showNav();" onmouseout="hideNav();"></i>
+		</nav>
+    <div class="hero">
+      <div class="hero__logo">
+        <img id="hero-logo" src="images/logo_outerheaven.svg" alt="Outer Heaven logo">
+      </div>
+      <div class="hero__title">
+        <h1>outer heaven</h1>
+      </div>
+    </div>
+    <div id="services" class="services">
+      <a class="nav-link" href="#systems"><h2>System administration</h2></a>
+      <a class="nav-link" href="#languages"><h2>Java programming</h2></a>
+    </div>
+    <div id="technologies" class="technologies">
+      <div id="systems">
+        <img src="images/Apache_logo.svg" alt="Apache logo">
+        <p>Apache Web Server</p>
+      </div>
+      <div>
+        <img src="images/jboss_logo.svg" alt="JBOSS logo">
+        <p>JBOSS</p>
+      </div>
+      <div>
+        <img src="images/ibm_logo.svg" alt="IBM WebSphere logo">
+        <p>IBM WebSphere</p>
+      </div>
+      <div id="languages">
+        <img src="images/java_logo.svg" alt="Java logo">
+        <p>Java language</p>
+      </div>
+      <div>
+        <img src="images/springboot_logo.svg" alt="Spring Boot logo">
+        <p>Spring Boot</p>
+      </div>
+      <div>
+        <img src="images/groovy_logo.svg" alt="Groovy logo">
+        <p>Groovy</p>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <button id="button--contact" class="buttons" type="button" onclick="showContactForm();">Contact<i id="close" class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="form-wrapper" class="form-wrapper">
+      <div class="form">
+        <h2 id="form__heading">Get in touch</h2>
+        <form id="contactForm" action="https://mailthis.to/adrian.perkovic@outerheaven.eu" method="POST" encType="multipart/form-data">
+          <div class="contactForm__container">
+            <p>Name:*</p>
+            <input type="text" name="Name" placeholder="Name" required>
+            <p>E-mail:*</p>
+            <input type="_replyto" name="E-mail address" placeholder="E-mail address" required>
+            <p>Phone number:</p>
+            <input type="tel" name="Phone number" placeholder="Phone number">
+            <p>Message:*</p>
+            <textarea name="Message" placeholder="Enter your message here" rows="10" cols="30" required></textarea><br />
+          </div>
+          <div class="button-wrapper">
+            <label id="fileattach"><input type="file" name="file" placeholder="Attachments (optional)">File upload</label><br />
+            <button id="button--submit" class="buttons" type="submit" form="contactForm" value="Submit">Submit</button>
+          </div>
+          <input type="hidden" name="_subject" value="Contact form submitted">
+        </form>
+      </div>
+    </div>
+    <footer>
+      <a href="#home">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+      <div class="footer__info">
+        <p><i class="fa-solid fa-user"></i>Adrian Perkovic</p>
+        <p><i class="fa-solid fa-at"></i>adrian.perkovic@outerheaven.eu</p>
+        <p><i class="fa-solid fa-phone"></i>+385 91 9253 576</p>
+      </div>
+      <div class="copyright">
+        <p>outer heaven &copy; 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
