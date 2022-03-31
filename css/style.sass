@@ -8,6 +8,9 @@ $font-family: 'Gruppo', cursive
   display: flex
   flex-wrap: wrap
 
+html
+  scroll-behavior: smooth
+  
 body
   font-family: $font-family
   background-color: $black
@@ -49,10 +52,6 @@ nav
   position: fixed
   z-index: 1
   cursor: pointer
-#bar:hover
-  color: $white
-  margin-top: 8vh
-  position: fixed
 
 .navbar-nav
   @include flexsections
@@ -77,7 +76,7 @@ nav
   li
     padding-left: 1.3vw
     font-size: 1em
-  a:hover
+  li a:hover
     color: $white
 
 @mixin links
@@ -245,11 +244,10 @@ nav
 #form-wrapper
   display: none
   position: relative
-  height: 110vh
   width: 100%
 
 .form
-  margin: -25vh 30vw 20vh
+  margin: -25vh 30vw 0vh
   padding: 22vh 0 5vh
   width: 40vw
   @include flexsections
@@ -301,7 +299,7 @@ nav
 
 //Footer
 footer
-  margin-top: 17vh
+  margin-top: 3vh
   width: 100%
 
 .fa-angle-up

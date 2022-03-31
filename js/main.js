@@ -1,6 +1,10 @@
 function showNav() {
   var nav = document.getElementById("navbar__nav");
+  var bar = document.getElementById("bar");
   nav.style.display = "inline";
+  bar.style.color = "white";
+  bar.style.position = "fixed";
+  bar.style.marginTop = "1vh";
 }
 
 function hideNav() {
@@ -8,6 +12,8 @@ function hideNav() {
   var nav = document.getElementById("navbar__nav");
   nav.style.display = "none";
   bar.style.display = "inline";
+  bar.style.color = "#919191";
+  bar.style.marginTop = "0vh";
 }
 
 function showContactForm() {
